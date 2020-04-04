@@ -1,0 +1,14 @@
+node_modules
+*.log
+.editorconfig
+.DS_Store
+*-lock.json
+/dist
+/.idea
+/.vscode
+/.vs
+*/.idea
+/gulp_old
+.bowerrc
+*.psd
+*.pdf
