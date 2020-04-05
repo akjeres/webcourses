@@ -1,0 +1,25 @@
+.checkbox {
+  &_wrapper {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    clear: both;
+  }
+  &_input {
+    display: none;
+    &:checked {
+      & ~ .checkbox {
+        background-image: url(/img/icons/input/checked.svg);
+      }
+    }
+  }
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid $border;
+  background: none center no-repeat transparent;
+  background-size: 24px;
+  margin-right: 12px;
+  float: left;
+}

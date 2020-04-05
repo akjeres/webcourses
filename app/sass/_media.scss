@@ -57,6 +57,7 @@
 
 }
 @media only screen and (max-width : 767px){
+	@import "auth/media-767";
 }
 @media only screen and (max-width : 690px){
 
@@ -115,7 +116,6 @@
 
 }
 
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){}
 	/**/
@@ -156,6 +156,11 @@
 @media only screen and (min-width : 1700px){
 
 }
+
+@media only screen and (max-height : 750px) and (min-width: 768px) {
+	@import "auth/media-height-750";
+}
+
 @media (orientation: landscape) and (max-width: 768px) {
 
 }

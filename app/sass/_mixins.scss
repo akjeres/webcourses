@@ -9,6 +9,22 @@
   text-decoration: inherit;
 }
 
+@mixin link($color) {
+  color: $color;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: $color solid 1px!important;
+  }
+  &:active {
+    text-decoration: underline;
+    outline: none!important;
+  }
+}
+
 @mixin circle($diam) {
   width: $diam;
   height: $diam;
@@ -28,36 +44,36 @@
 }
 
 @mixin transition($p1, $p2: null, $p3: null) {
-  transition: $p1 $aT $timing;
+  transition: $p1 $duration $timing;
 
   @if $p2 {
-    transition: $p1 $aT $timing, $p2 $aT $timing;
+    transition: $p1 $duration $timing, $p2 $duration $timing;
   }
 
   @if $p3 {
-    transition: $p1 $aT $timing, $p2 $aT $timing, $p3 $aT $timing;
+    transition: $p1 $duration $timing, $p2 $duration $timing, $p3 $duration $timing;
   }
 }
 
 @mixin placeholder_animated($color: inherit) {
   &::-webkit-input-placeholder {
     color: $color;
-    transition: color $aT $timing;
+    transition: color $duration $timing;
   }
 
   &::-moz-placeholder {
     color: $color;
-    transition: color $aT $timing;
+    transition: color $duration $timing;
   }
 
   &:-ms-input-placeholder {
     color: $color;
-    transition: color $aT $timing;
+    transition: color $duration $timing;
   }
 
   &:-moz-placeholder {
     color: $color;
-    transition: color $aT $timing;
+    transition: color $duration $timing;
   }
 
   &:focus {

@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, sans-serif;
-	color: #000;
+	color: $default;
 	font-weight: normal;
 	overflow-x: hidden;
 	user-select: none;
@@ -55,4 +55,47 @@ option {
 	@include inherit;
 }
 
+//Parts
+.page {
+	min-height: 100vh;
+	&-grey {
+		background-color: #F2F2F2;
+	}
+}
+.full-height {
+	padding: 11px 0;
+}
+.block {
+	display: block;
+}
+.border {
+	border-radius: 8px;
+}
+.shadow {
+	box-shadow: 0 4px 16px rgba($box-shadow, 0.08),
+				0 4px 4px rgba($box-shadow, 0.04);
+}
+.text {
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	@media only screen and (max-width : 767px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	a { @include link($purple)}
+	&-small {
+		font-size: 13px;
+		line-height: 20px;
+		@media only screen and (max-width : 767px) {
+			font-size: 11px;
+			line-height: 16px;
+		}
+	}
+}
+@import "parts/main";
+//Parts end
+// Pages
+@import "auth/main";
+// Pages end
 @import "_media";

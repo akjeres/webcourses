@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/main.min.css">
-    <script src="./js/scripts.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/scripts.min.js"></script>
 </head>
 <body class="loading">
     <script>
@@ -17,5 +18,88 @@
         var apple_method = isMacLike ? 'add' : 'remove';
         document.body.classList[apple_method]('apple');
     </script>
+    <main class="page full-height page-grey">
+        <section class="auth">
+            <div class="shadow border auth_form__wrapper">
+                <div class="auth_form__body">
+                    <div class="auth_form__header">
+                        <h1 class="title auth_form__title">Profile</h1>
+                        <ul class="navigation auth_form__navigation">
+                            <li class="navigation_item active">
+                                <button type="button">Registration</button>
+                            </li>
+                            <li class="navigation_item">
+                                <button type="button">Sign in</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="auth_form__social-wrapper">
+                        <p class="text text-small auth_form__social-text">You can sign in with social</p>
+                        <ul class="auth_form__social-login">
+                            <li>
+                                <button class="button button-white auth_form__social" type="button" title="VK login">
+                                    <img src="./img/icons/social/vk.svg" alt="VK login">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="button button-white auth_form__social" type="button" title="Facebook login">
+                                    <img src="./img/icons/social/facebook.svg" alt="Facebook login">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="button button-white auth_form__social" type="button" title="Google login">
+                                    <img src="./img/icons/social/google.svg" alt="Google login">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="auth_form">
+                        <div class="input_wrapper auth_form__input-wrapper">
+                            <label class="input_label">
+                                <input class="input input-default input-text" type="text" name="your-name" autocomplete="off">
+                                <span class="input_placeholder">Your name</span>
+                                <span class="input_close">
+                                    <img class="input_close-close" src="./img/icons/input/close.svg" alt="Clear">
+                                    <img class="input_close-checked" src="./img/icons/input/checked-green.svg" alt="Clear">
+                                </span>
+                            </label>
+                            <p class="input_text">Error text</p>
+                        </div>
+                        <div class="input_wrapper auth_form__input-wrapper">
+                            <label class="input_label">
+                                <input class="input input-default input-email" type="email" name="your-email" autocomplete="off">
+                                <span class="input_placeholder">E-mail</span>
+                                <span class="input_close">
+                                    <img class="input_close-close" src="./img/icons/input/close.svg" alt="Clear">
+                                    <img class="input_close-checked" src="./img/icons/input/checked-green.svg" alt="Clear">
+                                </span>
+                            </label>
+                            <p class="input_text">Error text</p>
+                        </div>
+                        <div class="input_wrapper auth_form__input-wrapper">
+                            <label class="input_label">
+                                <input class="input input-default input-phone" type="tel" name="your-phone" autocomplete="off">
+                                <span class="input_placeholder">Phone</span>
+                                <span class="input_close">
+                                    <img class="input_close-close" src="./img/icons/input/close.svg" alt="Clear">
+                                    <img class="input_close-checked" src="./img/icons/input/checked-green.svg" alt="Clear">
+                                </span>
+                            </label>
+                            <p class="input_text">Error text</p>
+                        </div>
+                        <label class="checkbox_wrapper auth_form__input-wrapper auth_form__checkbox-wrapper" tabindex="1">
+                            <input type="checkbox" hidden class="checkbox_input">
+                            <span class="checkbox"></span>
+                            <span class="text checkbox_text">I accept the terms of the offer of <a href="#">the privacy policy</a></span>
+                        </label>
+                        <div class="auth_form__buttons">
+                            <button type="button" class="block button button-default auth_form__button">Registration</button>
+                            <button type="button" class="block button button-white auth_form__button">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

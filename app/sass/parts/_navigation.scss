@@ -1,0 +1,39 @@
+.navigation {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: auto;
+  clear: both;
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  @media only screen and (max-width : 767px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  color: $grey;
+  &_item {
+    flex-shrink: 0;
+    display: block;
+    &:not(:last-child) {
+      margin-right: 24px;
+      @media only screen and (max-width : 767px) {
+        margin-right: 15px;
+      }
+    }
+    button {
+      @include none;
+      cursor: pointer;
+      padding: 7px 0 13px 0;
+      border-bottom: 2px solid transparent;
+    }
+    &.active {
+      button {
+        color: $default;
+        border-bottom-color: $purple;
+      }
+    }
+  }
+}

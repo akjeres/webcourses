@@ -22,6 +22,6 @@
 
 })();
 // NodeElement.prototype.closest() polyfill ends
-window.addEventListener('load', () => {
-    console.log('loaded');
-});
+(function($) {
+    // Code goes here
+})( jQuery );
