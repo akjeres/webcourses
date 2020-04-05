@@ -32,6 +32,7 @@
 
 }
 @media only screen and (max-width : 1199px){
+	@import "parts/course/media-1199";
 }
 @media only screen and (max-width : 1100px){
 
@@ -46,6 +47,7 @@
 }
 @media only screen and (max-width : 991px){
 	@import "header-media-991";
+	@import "parts/course/media-991";
 }
 @media only screen and (max-width : 950px){
 
@@ -89,6 +91,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
+	@import "parts/course/media-480";
 }
 @media only screen and (max-width : 460px){
 

@@ -1,0 +1,10 @@
+.course {
+  width: 50%;
+  &_list {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+  &_content {
+    margin: 16px;
+  }
+}

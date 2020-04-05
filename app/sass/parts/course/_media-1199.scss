@@ -1,0 +1,23 @@
+.course {
+  &_list {
+    width: calc(100% + 16px);
+    margin-left: -8px;
+  }
+  &_content {
+    margin: 16px 8px;
+    box-shadow: 0 4px 8px rgba($box-shadow, 0.08),
+                0 4px 4px rgba($box-shadow, 0.04);
+    &:hover {
+      box-shadow: 0 4px 8px rgba($box-shadow, 0.24),
+                  0 4px 4px rgba($box-shadow, 0.04);
+    }
+  }
+  &_description {
+    &__info {
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: unset;
+    }
+  }
+}
