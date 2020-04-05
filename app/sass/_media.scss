@@ -47,6 +47,7 @@
 }
 @media only screen and (max-width : 991px){
 	@import "header-media-991";
+	@import "catalog/media-991";
 	@import "parts/course/media-991";
 }
 @media only screen and (max-width : 950px){
@@ -63,6 +64,7 @@
 	@import "header-media-767";
 	@import "media-767";
 	@import "auth/media-767";
+	@import "catalog/media-767";
 	@import "parts/media-767";
 }
 @media only screen and (max-width : 690px){

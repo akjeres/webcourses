@@ -1,0 +1,21 @@
+.catalog {
+  color: #000;
+  &_container {
+    margin: 40px auto 32px auto;
+  }
+  &_content {
+    max-width: 724px;
+    margin: 0 auto 0 0;
+  }
+  &_title {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 12px;
+  }
+  &_description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

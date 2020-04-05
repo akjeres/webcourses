@@ -1,0 +1,14 @@
+.catalog {
+  &_container {
+    margin: 30px auto 15px auto;
+  }
+  &_title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  &_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
