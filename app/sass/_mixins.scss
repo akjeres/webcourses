@@ -12,10 +12,10 @@
 @mixin link($color) {
   color: $color;
   cursor: pointer;
+  &:focus-within,
   &:hover {
     text-decoration: underline;
   }
-  &:focus-within,
   &:focus {
     text-decoration: none;
     outline: $color solid 1px!important;

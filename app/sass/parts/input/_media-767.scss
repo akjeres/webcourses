@@ -1,0 +1,40 @@
+.input {
+  &_wrapper {
+    &.filled {
+      .input {
+        &_placeholder {
+          font-size: 11px;
+          line-height: 16px;
+          top: 4px;
+        }
+      }
+    }
+    &.active {
+      .input {
+        &_placeholder {
+          font-size: 11px;
+          line-height: 16px;
+          top: 4px;
+        }
+      }
+    }
+  }
+  &_label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  padding: 24px 44px 6px 16px;
+  &:-webkit-autofill {
+    & ~ .input {
+      &_placeholder {
+        font-size: 11px;
+        line-height: 16px;
+        top: 4px;
+      }
+    }
+  }
+  &_close {
+    width: 20px;
+    height: 20px;
+  }
+}

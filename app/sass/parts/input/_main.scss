@@ -59,9 +59,6 @@
           opacity: 0!important;
           pointer-events: none!important;
         }
-        &_text {
-          display: block;
-        }
       }
       &.filled {
         .input {
@@ -74,6 +71,9 @@
             &-close {
               opacity: 1;
             }
+          }
+          &_text {
+             display: block;
           }
         }
       }
@@ -111,11 +111,6 @@
         &_placeholder {
           font-size: 13px;
           line-height: 20px;
-          @media only screen and (max-width : 767px) {
-            font-size: 11px;
-            line-height: 16px;
-            top: 4px;
-          }
           top: 6px;
           transform: none;
         }
@@ -135,11 +130,6 @@
         &_placeholder {
           font-size: 13px;
           line-height: 20px;
-          @media only screen and (max-width : 767px) {
-            font-size: 11px;
-            line-height: 16px;
-            top: 4px;
-          }
           top: 6px;
           transform: none;
           z-index: 1;
@@ -169,19 +159,12 @@
     width: 100%;
     font-size: 16px;
     line-height: 24px;
-    @media only screen and (max-width : 767px) {
-      font-size: 14px;
-      line-height: 20px;
-    }
   }
   @include none;
   display: block;
   position: relative;
   width: 100%;
   padding: 26px 48px 6px 16px;
-  @media only screen and (max-width : 767px) {
-    padding: 24px 44px 6px 16px;
-  }
   z-index: 1;
   border-radius: 4px;
   box-shadow: 0 4px 16px rgba($box-shadow, 0.08),
@@ -197,11 +180,6 @@
         z-index: 1;
         font-size: 13px;
         line-height: 20px;
-        @media only screen and (max-width : 767px) {
-          font-size: 11px;
-          line-height: 16px;
-          top: 4px;
-        }
         top: 6px;
         transform: none;
       }
@@ -231,10 +209,6 @@
     display: block;
     width: 24px;
     height: 24px;
-    @media only screen and (max-width : 767px) {
-      width: 20px;
-      height: 20px;
-    }
     position: absolute;
     top: 50%;
     right: 12px;
