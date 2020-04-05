@@ -1,0 +1,22 @@
+.search {
+  &_content {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    & > div {
+      padding: 0 10px;
+      &:empty { display: none }
+    }
+  }
+  &_field {
+    &__wrapper {
+      flex: 1;
+    }
+    &__country-wrapper {
+      width: 279px;
+    }
+  }
+}

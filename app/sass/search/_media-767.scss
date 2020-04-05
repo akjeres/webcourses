@@ -1,0 +1,17 @@
+.search {
+  &_content {
+    width: 100%;
+    margin-left: auto;
+    & > div {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  &_field {
+    &__country {
+      &-wrapper {
+        margin: 20px auto 6px auto;
+      }
+    }
+  }
+}

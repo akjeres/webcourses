@@ -37,4 +37,23 @@
     width: 20px;
     height: 20px;
   }
+  &_chevron {
+     width: 20px;
+     height: 20px;
+   }
+  &_dropdown {
+    font-size: 14px;
+    line-height: 20px;
+    &__item {
+      padding: 8px 44px 8px 16px;
+      background: none calc(100% - 12px) center no-repeat transparent;
+      background-size: 20px;
+    }
+  }
+  &_select {
+    .input {
+      padding: 24px 68px 6px 16px;
+      &_close { right: 36px }
+    }
+  }
 }
