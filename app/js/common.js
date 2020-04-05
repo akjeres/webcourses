@@ -47,6 +47,20 @@
             this.closest(user_selector).classList.toggle(switcher);
         });
         $('input')
+            .on('mouseover', (e) => {
+                const switcher = 'hover';
+                const parent = '.input_wrapper';
+                const method = 'add';
+                const parent_tag = e.target.closest(parent);
+                if (parent_tag) parent_tag.classList[method](switcher);
+            })
+            .on('mouseout', (e) => {
+                const switcher = 'hover';
+                const parent = '.input_wrapper';
+                const method = 'remove';
+                const parent_tag = e.target.closest(parent);
+                if (parent_tag) parent_tag.classList[method](switcher);
+            })
             .on('input', (e) => {
                 const switcher = 'filled';
                 const parent = '.input_wrapper';

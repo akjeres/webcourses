@@ -56,4 +56,15 @@
       &_close { right: 36px }
     }
   }
+  &_search {
+    .input {
+      padding: 15px 44px!important;
+      &_search {
+        &__icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
 }

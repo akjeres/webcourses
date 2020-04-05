@@ -7,7 +7,7 @@
     width: 100px;
   }
   &_info {
-    width: calc(100% - 115px);
+    width: 205px;
   }
   &_navigation {
     &__wrapper {
@@ -26,8 +26,7 @@
       clear: both;
     }
     .user {
-      float: right;
-      max-width: 100%;
+      width: 100%;
       &_name {
         max-width: calc(100% - 59px);
       }
