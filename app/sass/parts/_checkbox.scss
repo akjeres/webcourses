@@ -9,7 +9,7 @@
     display: none;
     &:checked {
       & ~ .checkbox {
-        background-image: url(../../img/icons/input/checked.svg);
+        background-image: url(../img/icons/input/checked.svg);
       }
     }
   }

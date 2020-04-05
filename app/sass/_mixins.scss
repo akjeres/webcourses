@@ -15,6 +15,7 @@
   &:hover {
     text-decoration: underline;
   }
+  &:focus-within,
   &:focus {
     text-decoration: none;
     outline: $color solid 1px!important;
