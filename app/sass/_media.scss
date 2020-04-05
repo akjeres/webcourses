@@ -45,6 +45,7 @@
 
 }
 @media only screen and (max-width : 991px){
+	@import "header-media-991";
 }
 @media only screen and (max-width : 950px){
 
@@ -57,6 +58,7 @@
 
 }
 @media only screen and (max-width : 767px){
+	@import "header-media-767";
 	@import "media-767";
 	@import "auth/media-767";
 	@import "parts/media-767";

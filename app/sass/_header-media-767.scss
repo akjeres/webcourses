@@ -1,0 +1,36 @@
+.header {
+  &_container {
+    padding: 0 15px;
+  }
+  &_logo {
+    margin: 26px 15px 0 0;
+    width: 100px;
+  }
+  &_info {
+    width: calc(100% - 115px);
+  }
+  &_navigation {
+    &__wrapper {
+      width: calc(100% + 115px);
+      margin: 0 auto 0 -115px;
+      .navigation_item {
+        button {
+          padding: 7px 13px;
+        }
+      }
+    }
+  }
+  &_user {
+    width: 100%;
+    &__content {
+      clear: both;
+    }
+    .user {
+      float: right;
+      max-width: 100%;
+      &_name {
+        max-width: calc(100% - 59px);
+      }
+    }
+  }
+}

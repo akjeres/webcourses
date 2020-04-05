@@ -1,0 +1,21 @@
+.header {
+  &_container {
+    align-items: flex-start;
+  }
+  &_logo {
+    margin: 23px 30px 0 0;
+  }
+  &_info {
+    display: block;
+    clear: both;
+  }
+  &_user {
+    margin: 15px 0 0 0;
+    float: right;
+  }
+  &_navigation__wrapper {
+    padding-top: 15px;
+    width: calc(100% + 182px);
+    margin: 0 auto 0 -182px;
+  }
+}
